@@ -15,15 +15,15 @@
 
 
 
-<meta name="description" content="Purple Violet">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Purple Violet">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Search.php表单">
+<meta property="og:url" content="http://yoursite.com/2016/10/31/Search.php表单/index.html">
 <meta property="og:site_name" content="Purple Violet">
-<meta property="og:description" content="Purple Violet">
+<meta property="og:image" content="http://yoursite.com/images/HCCDB.png">
+<meta property="og:updated_time" content="2016-11-02T03:20:35.963Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Purple Violet">
-<meta name="twitter:description" content="Purple Violet">
+<meta name="twitter:title" content="Search.php表单">
+<meta name="twitter:image" content="http://yoursite.com/images/HCCDB.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -55,7 +55,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives | Purple Violet</title>
+<title>Search.php表单 | Purple Violet</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -65,8 +65,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -255,9 +255,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Search.php表单" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Search.php表单" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/10/31/Search.php表单/" class="article-date">
@@ -275,39 +273,100 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/31/Search.php表单/">Search.php表单</a>
+    <h1 class="article-title" itemprop="name">
+      Search.php表单
     </h1>
   
 
       </header>
       
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><Excerpt in index | 首页摘要><br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h1 id="HTML-lt-form-gt-表单用于搜集不同类型的用户输入"><a href="#HTML-lt-form-gt-表单用于搜集不同类型的用户输入" class="headerlink" title="HTML &lt;form&gt;表单用于搜集不同类型的用户输入"></a>HTML &lt;form&gt;表单用于搜集不同类型的用户输入</h1><h2 id="表单中包含的元素包括：-input元素-复选框-单选按钮-提交按钮"><a href="#表单中包含的元素包括：-input元素-复选框-单选按钮-提交按钮" class="headerlink" title="表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮"></a>表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">&lt;form class=&quot;well form-inline&quot; role=&quot;form&quot; method=&quot;POST&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot; name=&quot;myForm&quot; id=&quot;myForm&quot;&gt;</div><div class="line">&lt;!--label class=&quot;sr-only&quot; for=&quot;exampleInputEmail2&quot;&gt;Email address&lt;/label--&gt;</div><div class="line">  	&lt;select class=&quot;selectpicker show-tick&quot; name=&quot;ID_type&quot; id=&quot;ID_type&quot; Onchange=&quot;OnSelect(this)&quot;&gt;</div><div class="line">		&lt;option value=&quot;Symbol&quot;&gt;Symbol&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;Entrez_ID&quot;&gt;Entrez_ID&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;miRNA&quot;&gt;miRNA&lt;/option&gt;</div><div class="line">	&lt;/select&gt;</div><div class="line">	&lt;!--label class=&quot;sr-only&quot; for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label--&gt;</div><div class="line">           	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; required=&quot;Please input&quot;  placeholder=&quot;Enter an ID or a Symbol&quot; name=&quot;ID_value&quot; id=&quot;ID_value&quot; data-provide=&quot;typeahead&quot; autocomplete=&quot;off&quot;&gt;	</div><div class="line">  	&lt;label&gt;&amp;nbsp Type&lt;/label&gt;</div><div class="line">  	&lt;select class=&quot;selectpicker show-tick&quot; name=&quot;data_type&quot; id=&quot;select_type&quot; Onchange=&quot;OnSelectChange(this)&quot;&gt;</div><div class="line">		&lt;option value=&quot;all&quot;&gt;All&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;HCC&quot;&gt;HCC&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;Adjacent&quot;&gt;Adjacent&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;Cirrhotic&quot;&gt;Cirrhotic&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;Healthy&quot;&gt;Healthy&lt;/option&gt;</div><div class="line">  	&lt;/select&gt;</div><div class="line">  	&lt;label&gt;&amp;nbsp Datasets&lt;/label&gt;</div><div class="line">  	&lt;select class=&quot;selectpicker show-tick&quot; name=&quot;Datasets[]&quot; title=&quot;Choose the dataset you like&quot; multiple id=&quot;datasets&quot;&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB1&quot; selected=&quot;selected&quot;&gt;HCCDB1&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB2&quot; disabled=&quot;disabled&quot;&gt;HCCDB2&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB3&quot; selected=&quot;selected&quot;&gt;HCCDB3&lt;/option&gt;</div><div class="line"> 	&lt;option value=&quot;HCCDB4&quot; selected=&quot;selected&quot;&gt;HCCDB4&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB5&quot; selected=&quot;selected&quot;&gt;HCCDB5&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB6&quot; selected=&quot;selected&quot;&gt;HCCDB6&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB7&quot; selected=&quot;selected&quot;&gt;HCCDB7&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB8&quot; selected=&quot;selected&quot;&gt;HCCDB8&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB9&quot; selected=&quot;selected&quot;&gt;HCCDB9&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB10&quot; disabled=&quot;disabled&quot;&gt;HCCDB10&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB11&quot; selected=&quot;selected&quot;&gt;HCCDB11&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB12&quot; selected=&quot;selected&quot;&gt;HCCDB12&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB13&quot; selected=&quot;selected&quot;&gt;HCCDB13&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB14&quot; selected=&quot;selected&quot;&gt;HCCDB14&lt;/option&gt;</div><div class="line">  	&lt;option value=&quot;HCCDB15&quot; selected=&quot;selected&quot;&gt;HCCDB15&lt;/option&gt;</div><div class="line">  	&lt;/select&gt;</div><div class="line">  	&amp;nbsp &amp;nbsp</div><div class="line">  	&lt;input type=&quot;submit&quot; class=&quot;btn btn-info&quot; id=&quot;submitButton&quot;  name=&quot;submitButton&quot; value=&quot;Submit&quot; onChange=&quot;query_table()&quot;&gt;</div><div class="line">  </div><div class="line"> &lt;/form&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>网站效果图:</strong><br><img src="/images/HCCDB.png" alt="代码效果图"></p>
 
       
-      
-        <p class="article-more-link">
-          <a href="/2016/10/31/Search.php表单/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/10/31/Search.php表单/">Search.php表单</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">王事成</a></p>
+        <p><span>发布时间:</span>2016-10-31, 22:07:58</p>
+        <p><span>最后更新:</span>2016-11-02, 11:20:35</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/31/Search.php表单/" title="Search.php表单">http://yoursite.com/2016/10/31/Search.php表单/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/10/31/Search.php表单/　　作者: 王事成" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+  
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-lt-form-gt-表单用于搜集不同类型的用户输入"><span class="toc-number">1.</span> <span class="toc-text">HTML <form>表单用于搜集不同类型的用户输入</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#表单中包含的元素包括：-input元素-复选框-单选按钮-提交按钮"><span class="toc-number">1.1.</span> <span class="toc-text">表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Search.php表单　| Purple Violet　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -315,9 +374,31 @@
 
 
 
+    
 
-  
-  
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/31/Search.php表单/">Search.php表单</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
