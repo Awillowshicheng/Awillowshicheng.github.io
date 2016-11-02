@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="##HTML &amp;lt;form&amp;gt;表单用于搜集不同类型的用户输入
+###表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮原始代码:                                                               Symbol                        Entrez_ID">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://yoursite.com/2016/10/31/hello-world/index.html">
 <meta property="og:site_name" content="Purple Violet">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-10-31T15:46:57.798Z">
+<meta property="og:description" content="##HTML &amp;lt;form&amp;gt;表单用于搜集不同类型的用户输入
+###表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮原始代码:                                                               Symbol                        Entrez_ID">
+<meta property="og:updated_time" content="2016-11-02T01:56:41.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:description" content="##HTML &amp;lt;form&amp;gt;表单用于搜集不同类型的用户输入
+###表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮原始代码:                                                               Symbol                        Entrez_ID">
 
 
 
@@ -282,16 +282,10 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>##HTML &lt;form&gt;表单用于搜集不同类型的用户输入</p>
+<p>###表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮<br><strong>原始代码:</strong><br>    <form class="well form-inline" role="form" method="POST" action="<?php echo htmlspecialchars($_SERVER[" php_self"]);?="">" name="myForm" id="myForm"><br>                <!--label class="sr-only" for="exampleInputEmail2">Email address</label--><br>                   <select class="selectpicker show-tick" name="ID_type" id="ID_type" onchange="OnSelect(this)"><br>                        <option value="Symbol">Symbol</option><br>                        <option value="Entrez_ID">Entrez_ID</option><br>                        <option value="miRNA">miRNA</option><br>                    </select><br>                    <!--label class="sr-only" for="exampleInputEmail1">Email address</label--><br>                   <input type="text" class="form-control" required="Please input" placeholder="Enter an ID or a Symbol" name="ID_value" id="ID_value" data-provide="typeahead" autocomplete="off"><br>                   <label>&amp;nbsp Type</label><br>                   <select class="selectpicker show-tick" name="data_type" id="select_type" onchange="OnSelectChange(this)"><br>                        <option value="all">All</option><br>                        <option value="HCC">HCC</option><br>                        <option value="Adjacent">Adjacent</option><br>                        <option value="Cirrhotic">Cirrhotic</option><br>                        <option value="Healthy">Healthy</option><br>                   </select><br>                   <label>&amp;nbsp Datasets</label><br>                   <select class="selectpicker show-tick" name="Datasets[]" title="Choose the dataset you like" multiple id="datasets"><br>                   <option value="HCCDB1" selected="selected">HCCDB1</option><br>                   <option value="HCCDB2" disabled="disabled">HCCDB2</option><br>                   <option value="HCCDB3" selected="selected">HCCDB3</option><br>                  <option value="HCCDB4" selected="selected">HCCDB4</option><br>                   <option value="HCCDB5" selected="selected">HCCDB5</option><br>                   <option value="HCCDB6" selected="selected">HCCDB6</option><br>                   <option value="HCCDB7" selected="selected">HCCDB7</option><br>                   <option value="HCCDB8" selected="selected">HCCDB8</option><br>                   <option value="HCCDB9" selected="selected">HCCDB9</option><br>                   <option value="HCCDB10" disabled="disabled">HCCDB10</option><br>                   <option value="HCCDB11" selected="selected">HCCDB11</option><br>                   <option value="HCCDB12" selected="selected">HCCDB12</option><br>                   <option value="HCCDB13" selected="selected">HCCDB13</option><br>                   <option value="HCCDB14" selected="selected">HCCDB14</option><br>                   <option value="HCCDB15" selected="selected">HCCDB15</option><br>                   </select><br>                   &amp;nbsp &amp;nbsp<br>                   <input type="submit" class="btn btn-info" id="submitButton" name="submitButton" value="Submit" onchange="query_table()"></form></p>
+<pre><code>&lt;/form&gt;
+</code></pre>
       
     </div>
 
@@ -312,20 +306,6 @@ Quick">
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/01/my-new-post/" rel="prev" title="my new post">
-                my new post <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -390,7 +370,7 @@ Quick">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -422,7 +402,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>

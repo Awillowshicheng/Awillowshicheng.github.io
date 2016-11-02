@@ -241,99 +241,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/01/my-new-post/" itemprop="url">
-                  my new post
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-01T17:46:28+08:00" content="2016-11-01">
-              2016-11-01
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/10/31/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -378,16 +285,10 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+            <p>##HTML &lt;form&gt;表单用于搜集不同类型的用户输入</p>
+<p>###表单中包含的元素包括： input元素  复选框 单选按钮 提交按钮<br><strong>原始代码:</strong><br>    <form class="well form-inline" role="form" method="POST" action="<?php echo htmlspecialchars($_SERVER[" php_self"]);?="">" name="myForm" id="myForm"><br>                <!--label class="sr-only" for="exampleInputEmail2">Email address</label--><br>                   <select class="selectpicker show-tick" name="ID_type" id="ID_type" onchange="OnSelect(this)"><br>                        <option value="Symbol">Symbol</option><br>                        <option value="Entrez_ID">Entrez_ID</option><br>                        <option value="miRNA">miRNA</option><br>                    </select><br>                    <!--label class="sr-only" for="exampleInputEmail1">Email address</label--><br>                   <input type="text" class="form-control" required="Please input" placeholder="Enter an ID or a Symbol" name="ID_value" id="ID_value" data-provide="typeahead" autocomplete="off"><br>                   <label>&amp;nbsp Type</label><br>                   <select class="selectpicker show-tick" name="data_type" id="select_type" onchange="OnSelectChange(this)"><br>                        <option value="all">All</option><br>                        <option value="HCC">HCC</option><br>                        <option value="Adjacent">Adjacent</option><br>                        <option value="Cirrhotic">Cirrhotic</option><br>                        <option value="Healthy">Healthy</option><br>                   </select><br>                   <label>&amp;nbsp Datasets</label><br>                   <select class="selectpicker show-tick" name="Datasets[]" title="Choose the dataset you like" multiple id="datasets"><br>                   <option value="HCCDB1" selected="selected">HCCDB1</option><br>                   <option value="HCCDB2" disabled="disabled">HCCDB2</option><br>                   <option value="HCCDB3" selected="selected">HCCDB3</option><br>                  <option value="HCCDB4" selected="selected">HCCDB4</option><br>                   <option value="HCCDB5" selected="selected">HCCDB5</option><br>                   <option value="HCCDB6" selected="selected">HCCDB6</option><br>                   <option value="HCCDB7" selected="selected">HCCDB7</option><br>                   <option value="HCCDB8" selected="selected">HCCDB8</option><br>                   <option value="HCCDB9" selected="selected">HCCDB9</option><br>                   <option value="HCCDB10" disabled="disabled">HCCDB10</option><br>                   <option value="HCCDB11" selected="selected">HCCDB11</option><br>                   <option value="HCCDB12" selected="selected">HCCDB12</option><br>                   <option value="HCCDB13" selected="selected">HCCDB13</option><br>                   <option value="HCCDB14" selected="selected">HCCDB14</option><br>                   <option value="HCCDB15" selected="selected">HCCDB15</option><br>                   </select><br>                   &amp;nbsp &amp;nbsp<br>                   <input type="submit" class="btn btn-info" id="submitButton" name="submitButton" value="Submit" onchange="query_table()"></form></p>
+<pre><code>&lt;/form&gt;
+</code></pre>
           
         
       
@@ -456,7 +357,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
