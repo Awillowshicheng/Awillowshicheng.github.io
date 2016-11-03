@@ -1,0 +1,563 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Search.php（3）">
+<meta property="og:url" content="http://yoursite.com/2016/11/03/Search.php(3)/index.html">
+<meta property="og:site_name" content="Purple Violet">
+<meta property="og:updated_time" content="2016-11-03T13:15:15.548Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Search.php（3）">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/03/Search.php(3)/"/>
+
+
+  <title> Search.php（3） | Purple Violet </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="http://ww1.sinaimg.cn/small/4d4c8325gw1f9dkyy6oawj20zk0i2tfa.jpg"
+             alt="Purple Violet"/>
+      </a>
+    </div>
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Purple Violet</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            日程
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Search.php（3）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-03T21:08:52+08:00" content="2016-11-03">
+              2016-11-03
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h1 id="代码解读"><a href="#代码解读" class="headerlink" title="代码解读"></a>代码解读</h1><h2 id="6-第五个script部分"><a href="#6-第五个script部分" class="headerlink" title="6.第五个script部分"></a>6.第五个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div></pre></td><td class="code"><pre><div class="line">	&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;!-- 第五个script文件--&gt;</div><div class="line"></div><div class="line">&lt;script&gt;//figure network</div><div class="line">var flag = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;</div><div class="line">				$flag = 1;</div><div class="line">				&#125;</div><div class="line">			else</div><div class="line">			&#123;</div><div class="line">				$flag = 0;</div><div class="line">			&#125;</div><div class="line">			 echo $flag;?&gt;;</div><div class="line">// move upside</div><div class="line">&lt;?php</div><div class="line">                if ($flag)&#123;</div><div class="line">                       $commond_line = &quot;./get_symbol.py&quot; . &quot; &quot; . $ID . &quot; &quot; . $gene;</div><div class="line">                       $result = json_decode(exec($commond_line),true);</div><div class="line">                       echo &quot;var result = &quot;.json_encode($result).&quot;;\n\t&quot; ;</div><div class="line">                        if ($ID == &quot;Entrez_ID&quot;)&#123;</div><div class="line">                               echo &quot;var symbol = &quot;.json_encode($result[0]).&quot;;\n\t&quot; ;//get query symbol</div><div class="line">                               echo &quot;var entrez_id = &quot;. json_encode($gene) . &quot;;\n\t&quot; ;</div><div class="line">                       &#125;</div><div class="line">                       if ($ID == &quot;Symbol&quot;)&#123;</div><div class="line">                               echo &quot;var symbol = &quot;.json_encode($gene).&quot;;\n\t&quot; ;//get query symbol</div><div class="line">                               echo &quot;var entrez_id = &quot;. json_encode($result) . &quot;;\n\t&quot; ;</div><div class="line">                       &#125;</div><div class="line">                       if ($ID == &quot;miRNA&quot;)&#123;</div><div class="line">                       //</div><div class="line">                       &#125;</div><div class="line">               &#125;</div><div class="line">               ?&gt;</div><div class="line">//move upside</div><div class="line">&lt;?php</div><div class="line">	echo &quot;var form_ID = &quot;. json_encode($ID) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var form_type = &quot;. json_encode($type) .&quot;;\n\t&quot;;//original</div><div class="line">	echo &quot;var form_gene = &quot;. json_encode($gene) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var form_datasets = &quot;. json_encode($datasets) .&quot;;\n\t&quot;;</div><div class="line">	echo  &quot;var cy_sets = &quot;. json_encode($img_sets) .&quot;;\n\t&quot;;</div><div class="line">?&gt;</div><div class="line">&lt;?php</div><div class="line">	$iter = 0;</div><div class="line">	echo &quot;var js_adjs = new Array();\n\t&quot; ;</div><div class="line">	//if ($ID == &quot;Symbol&quot;) &#123;</div><div class="line">	//	$commond_line = &quot;./get_adj.py&quot; . &quot; &quot; . &quot;Entrez_ID&quot; . &quot; &quot; . $result . &quot; &quot; . $datasets_str;</div><div class="line">	//&#125; else&#123;</div><div class="line">		$commond_line = &quot;./get_adj.py&quot; . &quot; &quot; . $ID . &quot; &quot; . $gene . &quot; &quot; . $datasets_str;</div><div class="line">	//&#125;</div><div class="line">	exec($commond_line,$results);</div><div class="line">	foreach($results as $result)&#123;</div><div class="line">		$result = json_decode($result,true);</div><div class="line">		$adjs = json_encode($result);</div><div class="line">		echo &quot;js_adjs[&quot;. $iter .&quot;] = &quot;. $adjs .&quot;;\n\t&quot;;</div><div class="line">		$iter ++;</div><div class="line">	&#125;</div><div class="line">?&gt;</div><div class="line">	$(function()&#123;</div><div class="line">	if(flag)&#123;</div><div class="line">		//query info</div><div class="line">		var p = document.getElementById(&quot;info&quot;);</div><div class="line">		if (form_ID == &quot;miRNA&quot;)&#123;</div><div class="line">			p = document.getElementById(&quot;info1&quot;);</div><div class="line">			if (form_gene.substring(0,4) == &apos;hsa-&apos;)&#123;</div><div class="line">				p.innerText = &quot;miRNA: &quot; + form_gene.substring(4);</div><div class="line">				symbol = form_gene.substring(4);</div><div class="line">			&#125;</div><div class="line">			else&#123;</div><div class="line">				p.innerText = &quot;miRNA: &quot; + form_gene;</div><div class="line">				symbol = form_gene;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		else&#123;</div><div class="line">			p.innerText = &quot;Entrez_ID:  &quot;;// + entrez_id  +&quot;\n&quot;;</div><div class="line">			var a = document.createElement(&quot;a&quot;);</div><div class="line">			a.setAttribute(&quot;target&quot;,&quot;_blank&quot;);</div><div class="line">			a.setAttribute(&quot;href&quot;,&quot;http://www.ncbi.nlm.nih.gov/gene/?term=&quot; + entrez_id);</div><div class="line">			var link = document.createElement(&quot;h4&quot;);</div><div class="line">			a.innerText = entrez_id;</div><div class="line">			p.appendChild(a);</div><div class="line">			//p.setAttribute(&quot;href&quot;,&quot;http://www.ncbi.nlm.nih.gov/gene/?term=&quot; + entrez_id);</div><div class="line">			var p1 = document.getElementById(&quot;info1&quot;);</div><div class="line">			p1.innerText = &quot;Symbol:  &quot;;</div><div class="line">			a1 = document.createElement(&quot;a&quot;);</div><div class="line">			a1.setAttribute(&quot;target&quot;,&quot;_blank&quot;);</div><div class="line">			if (form_ID == &quot;Symbol&quot;)&#123;</div><div class="line">				a1.innerText =  symbol;</div><div class="line">				a1.setAttribute(&quot;href&quot;,&quot;http://www.genecards.org/cgi-bin/carddisp.pl?gene=&quot;.concat(symbol));</div><div class="line">			&#125;</div><div class="line">			if (form_ID == &quot;Entrez_ID&quot;)&#123;</div><div class="line">				a1.innerText = result;</div><div class="line">				a1.setAttribute(&quot;href&quot;,&quot;http://www.genecards.org/cgi-bin/carddisp.pl?gene=&quot;.concat(result));</div><div class="line">			&#125;</div><div class="line">	</div><div class="line">			p1.appendChild(a1);</div><div class="line">		&#125;</div><div class="line">		var p2 = document.getElementById(&quot;info1&quot;);</div><div class="line">		a2 = document.createElement(&quot;a&quot;);</div><div class="line">		//a2.innerText = symbol + &quot;.txt&quot;;</div><div class="line">		a2.setAttribute(&quot;href&quot;,&quot;Rawquery/&quot;+symbol+&quot;.txt&quot;);</div><div class="line">		a2.setAttribute(&quot;download&quot;,symbol+&quot;.txt&quot;);</div><div class="line">		var i = document.createElement(&apos;i&apos;);</div><div class="line">		i.setAttribute(&quot;class&quot;,&quot;fa fa-download download&quot;);</div><div class="line">		a2.appendChild(i);</div><div class="line">		p2.appendChild(a2);</div><div class="line">		for (var k in cy_sets)&#123;</div><div class="line">			var cy_id = &quot;cy&quot;+k;</div><div class="line">			var cy = cytoscape(&#123;</div><div class="line">			//$(&apos;#cy&apos;).cytoscape(&#123;</div><div class="line">				container: document.getElementById(cy_id),</div><div class="line">				ready: function()&#123;</div><div class="line">				&#125;,</div><div class="line">				style: [</div><div class="line">					&#123;</div><div class="line">						selector: &apos;node&apos;,</div><div class="line">						css: &#123;</div><div class="line">							&apos;content&apos;: &apos;data(name)&apos;,</div><div class="line">							&apos;text-valign&apos;: &apos;center&apos;,</div><div class="line">							&apos;background-color&apos;: &apos;Lavender&apos;,</div><div class="line">							&apos;text-outline-width&apos;: 1,</div><div class="line">							&apos;text-outline-color&apos;: &apos;#888&apos;,</div><div class="line">							&apos;color&apos;:&apos;black&apos;,</div><div class="line">							&apos;font-size&apos;:12,</div><div class="line">							width: 20,</div><div class="line">							height: 20</div><div class="line">						&#125;</div><div class="line">					&#125;,</div><div class="line">					&#123;</div><div class="line">						selector: &apos;edge&apos;,</div><div class="line">						css: &#123;</div><div class="line">							&apos;width&apos;: 2,</div><div class="line">							&apos;line-color&apos;: &apos;gray&apos;,</div><div class="line">							</div><div class="line">						&#125;</div><div class="line">					&#125;,</div><div class="line">					</div><div class="line">					&#123;</div><div class="line">						selector: &apos;:selected&apos;,</div><div class="line">						css:&#123;&apos;line-color&apos;:&apos;red&apos;,</div><div class="line">							&apos;background-color&apos;:&apos;LightSkyBlue&apos;</div><div class="line">						&#125;</div><div class="line">					&#125;</div><div class="line">				],</div><div class="line">				elements: &#123;</div><div class="line">					nodes: [</div><div class="line">						&#123; data: &#123; id: &apos;n&apos;, name: symbol&#125; &#125;</div><div class="line">					]</div><div class="line">				&#125;,</div><div class="line">			</div><div class="line">		layout: &#123;</div><div class="line">			name: &apos;concentric&apos;,</div><div class="line">			fit : true,</div><div class="line">			padding: 10</div><div class="line">		&#125;,</div><div class="line">				zoom: 0.7,</div><div class="line">				pan: &#123;x:55,y:70&#125;,</div><div class="line">				boxSelectionEnabled: true,</div><div class="line">				zoomingEnabled: false,</div><div class="line">				minZoom: 0.1,</div><div class="line">				maxZoom: 0.8</div><div class="line">			&#125;);</div><div class="line">			</div><div class="line">			</div><div class="line">		 </div><div class="line">	var cy = $(&quot;#&quot;+cy_id).cytoscape(&quot;get&quot;);</div><div class="line">	var eles = cy.getElementById(&apos;n&apos;);</div><div class="line">	eles.style(&apos;width&apos;,40);	</div><div class="line">	eles.style(&apos;height&apos;,40);</div><div class="line">	eles.style(&apos;background-color&apos;,&apos;MistyRose&apos;);</div><div class="line">	if(js_adjs[k]==&quot;None&quot;) &#123;</div><div class="line">		continue;</div><div class="line">	&#125;</div><div class="line">	if (js_adjs[k] == null)&#123;</div><div class="line">		continue;</div><div class="line">	&#125;</div><div class="line">	var adjs_nodes = js_adjs[k][0];</div><div class="line">	var extra_edges = js_adjs[k][1];</div><div class="line">	//add nodes and adjacent edge and adjacent edgess</div><div class="line">	// add nodes</div><div class="line">	for (var key in adjs_nodes)&#123;</div><div class="line">		var color = &apos;red&apos;;</div><div class="line">		var cor = adjs_nodes[key];</div><div class="line">		if (cor &lt; 0)&#123;</div><div class="line">		    color = &apos;black&apos;;</div><div class="line">		&#125;</div><div class="line">		cy.add([</div><div class="line">                               &#123;group: &quot;nodes&quot;, data:&#123;id:(&quot;n&quot;+key), name:key&#125;&#125;,</div><div class="line">                               &#123;group: &quot;edges&quot;, data:&#123;id:(&quot;e&quot;+key), source:&quot;n&quot;,target:(&quot;n&quot;+key)&#125;&#125;</div><div class="line">                       ]).style(&apos;line-color&apos;,color);</div><div class="line">	&#125;</div><div class="line">	// add extra edges</div><div class="line">	for(var key in extra_edges)&#123;</div><div class="line">		var source0 = extra_edges[key][0];</div><div class="line">                       var target0 = extra_edges[key][1];</div><div class="line">		var cor = extra_edges[key][2];</div><div class="line">		var color = &apos;red&apos;;</div><div class="line">		if (cor &lt; 0)&#123;</div><div class="line">		    color = &apos;black&apos;;</div><div class="line">		&#125;</div><div class="line">                       cy.add([&#123;</div><div class="line">                               group: &quot;edges&quot;, data:&#123;source:(&quot;n&quot;+source0),target:(&quot;n&quot;+target0)&#125;</div><div class="line">                       &#125;</div><div class="line">		]).style(&apos;line-color&apos;,color);</div><div class="line"></div><div class="line">	&#125;</div><div class="line">	cy.on(&apos;tap&apos;,&apos;node&apos;,&#123;foo:&quot;bar&quot;&#125;,function(evt)&#123;</div><div class="line">			var symbol = evt.cyTarget[0][&quot;_private&quot;].data.name;//name the node you click</div><div class="line">			//form data</div><div class="line">			$(&quot;#ID_value&quot;).val(symbol);</div><div class="line">			$(&quot;#data_type&quot;).val(form_type);</div><div class="line">			$(&quot;#datasets&quot;).val(form_datasets);</div><div class="line">			var action = &quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;;</div><div class="line">			console.log($(&quot;#ID_type&quot;).val());</div><div class="line">			if ($(&quot;#ID_type&quot;).val() == &quot;miRNA&quot;)&#123;</div><div class="line">       				action = action + &quot;?type=&quot; + $(&quot;#ID_type&quot;).val();</div><div class="line">       				$(&quot;#myForm&quot;).attr(&quot;action&quot;,action);</div><div class="line">			&#125;else&#123;</div><div class="line">				action = action + &quot;?type=Symbol&quot;;</div><div class="line">                                       $(&quot;#myForm&quot;).attr(&quot;action&quot;,action);</div><div class="line">			&#125;</div><div class="line">			$(&quot;#myForm&quot;).submit();</div><div class="line">			</div><div class="line">		&#125;);</div><div class="line">	&#125;</div><div class="line">	//cy.fit();</div><div class="line">	&#125;</div><div class="line">	//cy.resize();</div><div class="line">	&#125;);</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>代码解析:</strong></p>
+<h2 id="7-第六个script部分"><a href="#7-第六个script部分" class="headerlink" title="7.第六个script部分"></a>7.第六个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	$(&apos;#ID_value&apos;).on(&apos;change invalid&apos;, function() &#123;</div><div class="line">	</div><div class="line">		var textfield = $(this).get(0);</div><div class="line">		</div><div class="line">		// &apos;setCustomValidity not only sets the message, but also marks</div><div class="line">		// the field as invalid. In order to see whether the field really is</div><div class="line">		// invalid, we have to remove the message first</div><div class="line">		textfield.setCustomValidity(&apos;&apos;);</div><div class="line">		</div><div class="line">		if (!textfield.validity.valid) &#123;</div><div class="line">		  textfield.setCustomValidity(&apos;Please input an ID or a symbol&apos;);  </div><div class="line">		&#125;</div><div class="line">	&#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>代码解析:</strong></p>
+<h2 id="8-第七个script部分"><a href="#8-第七个script部分" class="headerlink" title="8.第七个script部分"></a>8.第七个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	NProgress.start();</div><div class="line">	$(function()&#123;</div><div class="line">		NProgress.done();</div><div class="line">	&#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>代码解析:</strong></p>
+<h2 id="9-第八个script部分"><a href="#9-第八个script部分" class="headerlink" title="9.第八个script部分"></a>9.第八个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">$(&quot;#submitButton&quot;).click(function()&#123;</div><div class="line">	var action = &quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;;</div><div class="line">	action = action + &quot;?type=&quot; + $(&quot;#ID_type&quot;).val();</div><div class="line">	$(&quot;#myForm&quot;).attr(&quot;action&quot;,action);	</div><div class="line">&#125;);</div><div class="line">var getUrlParameter = function getUrlParameter(sParam) &#123;</div><div class="line">		var sPageURL = decodeURIComponent(window.location.search.substring(1)),</div><div class="line">			sURLVariables = sPageURL.split(&apos;&amp;&apos;),</div><div class="line">			sParameterName,</div><div class="line">			i;</div><div class="line"></div><div class="line">		for (i = 0; i &lt; sURLVariables.length; i++) &#123;</div><div class="line">			sParameterName = sURLVariables[i].split(&apos;=&apos;);</div><div class="line"></div><div class="line">			if (sParameterName[0] === sParam) &#123;</div><div class="line">				return sParameterName[1] === undefined ? true : sParameterName[1];</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;;</div><div class="line">var type = getUrlParameter(&apos;type&apos;);</div><div class="line">var ID_value = getUrlParameter(&apos;symbol&apos;);</div><div class="line">$(&quot;#ID_type&quot;).val(type);</div><div class="line">$(&quot;#ID_value&quot;).val(ID_value);</div><div class="line">if (type == &quot;miRNA&quot;) &#123;</div><div class="line">	 var dataset = document.getElementById(&quot;datasets&quot;);</div><div class="line">                        for(var i = 0; i &lt; 15; i++)&#123;</div><div class="line">                                if(i == 0 || i == 7 || i == 9 || i == 14)//dataset1,dataset8,dataset10</div><div class="line">                                &#123;</div><div class="line">                                        dataset.options[i].disabled = false;</div><div class="line">                                        dataset.options[i].selected = true;</div><div class="line">                                &#125;</div><div class="line">                                else</div><div class="line">                                &#123;</div><div class="line">                                        dataset.options[i].disabled = true;</div><div class="line">                                        dataset.options[i].selected = false;</div><div class="line">                                &#125;</div><div class="line">                        &#125;</div><div class="line">                </div><div class="line">                /*else&#123;</div><div class="line">                        for(var i = 0; i &lt; 15; i++)&#123;</div><div class="line">                                if(i == 1 || i == 9)&#123;//dataset2 only for methylation, dataset10 only for miRNA</div><div class="line">                                        dataset.options[i].disabled = true;</div><div class="line">                                        dataset.options[i].selected = false;</div><div class="line">                                &#125;</div><div class="line">                                else&#123;</div><div class="line">                                        dataset.options[i].disabled = false;</div><div class="line">                                        dataset.options[i].selected = true;</div><div class="line">                                &#125;</div><div class="line">                        &#125;</div><div class="line">                &#125;*/</div><div class="line">                $(&quot;.selectpicker&quot;).selectpicker(&quot;refresh&quot;);//important</div><div class="line">	</div><div class="line">&#125;</div><div class="line">var submit_flag = getUrlParameter(&apos;submit&apos;);</div><div class="line">if (submit_flag==1)&#123;</div><div class="line">    var action = &quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;;</div><div class="line">    action = action + &quot;?type=&quot; + $(&quot;#ID_type&quot;).val();</div><div class="line">    $(&quot;#myForm&quot;).attr(&quot;action&quot;,action);</div><div class="line"></div><div class="line">    $(&quot;#myForm&quot;).submit();</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>代码解析:</strong></p>
+<h2 id="10-第九个script部分"><a href="#10-第九个script部分" class="headerlink" title="10.第九个script部分"></a>10.第九个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">var jQuery_1_7_1 = $.noConflict(true);//different jquery in use, do such to avoid conflict</div><div class="line">var subjects = new Array();</div><div class="line">jQuery_1_7_1(&apos;#ID_value&apos;).typeahead(&#123;source: subjects&#125;);</div><div class="line"> function readTextFile(file)</div><div class="line">        &#123;</div><div class="line">                                 var rawFile = new XMLHttpRequest();</div><div class="line">                                rawFile.open(&quot;POST&quot;, file, false);</div><div class="line">                                rawFile.onreadystatechange = function ()</div><div class="line">                                &#123;</div><div class="line">                                        if(rawFile.readyState === 4)</div><div class="line">                                        &#123;</div><div class="line">                                                if(rawFile.status === 200 || rawFile.status == 0)</div><div class="line">                                                &#123;</div><div class="line">                                                        var allText = rawFile.responseText;</div><div class="line">                                                        var subjects = allText.split(&quot;,&quot;);</div><div class="line">						//	jQuery_1_7_1(&apos;#ID_value&apos;).typeahead(&apos;destroy&apos;);</div><div class="line">					         	var autoComplete = jQuery_1_7_1(&apos;#ID_value&apos;).typeahead();</div><div class="line">							autoComplete.data(&apos;typeahead&apos;).source = subjects;</div><div class="line">                                                &#125;</div><div class="line">                                        &#125;</div><div class="line">                                &#125;</div><div class="line">                rawFile.send();</div><div class="line">       &#125;</div><div class="line">var type = $(&apos;#ID_type&apos;);</div><div class="line">if (type.val() == &apos;Symbol&apos;)&#123;</div><div class="line">	readTextFile(&quot;typeahead/symbols.csv&quot;);</div><div class="line">&#125;else if (type.val() == &apos;miRNA&apos;) &#123;</div><div class="line">	readTextFile(&quot;typeahead/miRNAs.csv&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//if type change</div><div class="line">$(&apos;#ID_type&apos;).change(function()&#123;</div><div class="line">	if ($(&apos;#ID_type&apos;).val() == &apos;Symbol&apos;)&#123;</div><div class="line">	//jQuery_1_7_1(&apos;#ID_value&apos;).typeahead(&apos;destroy&apos;);</div><div class="line">        readTextFile(&quot;typeahead/symbols.csv&quot;);</div><div class="line">	&#125;else if ($(&apos;#ID_type&apos;).val() == &apos;miRNA&apos;) &#123;</div><div class="line">	//	jQuery_1_7_1(&apos;#ID_value&apos;).typeahead(&apos;destroy&apos;);</div><div class="line">        	readTextFile(&quot;typeahead/miRNAs.csv&quot;);</div><div class="line">	&#125;else&#123;</div><div class="line">		readTextFile(&quot;typeahead/entrez_ids.csv&quot;);</div><div class="line">	&#125;</div><div class="line">//	jQuery_1_7_1(&apos;#ID_value&apos;).typeahead(&#123;source: subjects&#125;);</div><div class="line">	</div><div class="line">&#125;);</div><div class="line">	</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>代码解析:</strong></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/01/Search.php(2)/" rel="next" title="Search.php（2）">
+                <i class="fa fa-chevron-left"></i> Search.php（2）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww4.sinaimg.cn/small/4d4c8325jw1f9f7zhe9l6j20xc0xc43k.jpg"
+               alt="王事成" />
+          <p class="site-author-name" itemprop="name">王事成</p>
+          <p class="site-description motion-element" itemprop="description">Purple Violet</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#代码解读"><span class="nav-number">1.</span> <span class="nav-text">代码解读</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-第五个script部分"><span class="nav-number">1.1.</span> <span class="nav-text">6.第五个script部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-第六个script部分"><span class="nav-number">1.2.</span> <span class="nav-text">7.第六个script部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-第七个script部分"><span class="nav-number">1.3.</span> <span class="nav-text">8.第七个script部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-第八个script部分"><span class="nav-number">1.4.</span> <span class="nav-text">9.第八个script部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-第九个script部分"><span class="nav-number">1.5.</span> <span class="nav-text">10.第九个script部分</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王事成</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
