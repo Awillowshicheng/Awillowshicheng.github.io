@@ -1,17 +1,86 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
 <head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="紫色的紫" />
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
 
 
 
@@ -23,272 +92,197 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Search.php（2）">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="Purple Violet" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Search.php（2） | Purple Violet</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
     }
+  };
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
 
 
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
+  <link rel="canonical" href="http://yoursite.com/2016/11/01/Search_php2/"/>
 
 
-
-
-
+  <title> Search.php（2） | Purple Violet </title>
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">紫色的紫</a></h1>
-        </hgroup>
 
-        
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
-        
+  
 
 
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
 
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:1479205243@qq.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
 
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">2016 北京航空航天大学自动化科学与电气工程学院</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="http://ww1.sinaimg.cn/small/4d4c8325gw1f9dkyy6oawj20zk0i2tfa.jpg"
+             alt="Purple Violet"/>
+      </a>
+    </div>
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Purple Violet</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">紫色的紫</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">紫色的紫</a></h1>
-            </hgroup>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
             
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:1479205243@qq.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            日程
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
-      <div class="body-wrap"><article id="post-Search_php2" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/01/Search_php2/" class="article-date">
-      <time datetime="2016-11-01T09:46:28.311Z" itemprop="datePublished">2016-11-01</time>
-</a>
 
+ </div>
+    </header>
 
-    </div>
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Search.php（2）
-    </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
 
         
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Search.php（2）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-01T17:46:28+08:00" content="2016-11-01">
+              2016-11-01
+            </time>
+          </span>
+
           
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         <p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
 <p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
 <h1 id="代码解读"><a href="#代码解读" class="headerlink" title="代码解读"></a>代码解读</h1><h2 id="5-第四个script部分"><a href="#5-第四个script部分" class="headerlink" title="5.第四个script部分"></a>5.第四个script部分</h2><p><strong>原始代码:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;//ajax</div><div class="line">$(&apos;document&apos;).ready(function()&#123;//create query result table</div><div class="line">//var start = new Date();</div><div class="line">var flag = 0;</div><div class="line">flag = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;</div><div class="line">				$flag = 1;</div><div class="line">				&#125;</div><div class="line">			else</div><div class="line">			&#123;</div><div class="line">				$flag = 0;</div><div class="line">			&#125;</div><div class="line">			 echo $flag;?&gt;;</div><div class="line">&lt;?php</div><div class="line">$start = microtime(TRUE);</div><div class="line">putenv(&quot;PYTHON_EGG_CACHE=/home/web/html/member/gcz/temp&quot;);</div><div class="line">if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;</div><div class="line">$ID = $_POST[&quot;ID_type&quot;];</div><div class="line">$gene = $_POST[&quot;ID_value&quot;];</div><div class="line">$type = $_POST[&quot;data_type&quot;];</div><div class="line">$datasets = $_POST[&quot;Datasets&quot;];</div><div class="line">$total_num = 2;</div><div class="line">$index = 0;</div><div class="line">//$nums = array();</div><div class="line">$img_sets = array();//display the img of all datasets,except those who have no gene you input</div><div class="line">$tbl_sets = array();</div><div class="line">$p_values = array();</div><div class="line">// following array for survival</div><div class="line">$survivals = array();</div><div class="line">$surv_datasets = array();</div><div class="line">$KMtests = array();</div><div class="line">$LowExprMedian = array();</div><div class="line">$HighExprMedian = array();</div><div class="line">$Logtests = array();</div><div class="line">$Coefs = array();</div><div class="line">$SurvDatasets = array(&apos;HCCDB5&apos;,&apos;HCCDB6&apos;,&apos;HCCDB7&apos;,&apos;HCCDB10&apos;,&apos;HCCDB15&apos;);</div><div class="line"></div><div class="line">$iter = 0;</div><div class="line">$disable = 0;</div><div class="line">echo &quot;var type = &quot;. json_encode($type) .&quot;;\n\t&quot;;</div><div class="line">echo &quot;var js_nums = new Array();\n\t&quot; ;</div><div class="line">echo &quot;var js_res = new Array();\n\t&quot; ;</div><div class="line">echo &quot;var indice = new Array();\n\t&quot; ;</div><div class="line">echo &quot;var total_nums = new Array();\n\t&quot; ;</div><div class="line">//get all result from database</div><div class="line">$str0 = &quot;./query.py&quot;;// query.py&quot;;</div><div class="line">$datasets_str = implode(&quot;,&quot;,$datasets);</div><div class="line">$str0 = $str0 . &quot; &quot; . $ID . &quot; &quot; . $gene . &quot; &quot; . $type . &quot; &quot; . $datasets_str;</div><div class="line">exec($str0,$res0);</div><div class="line">foreach($res0 as $i=&gt;$res)&#123;</div><div class="line">		$dataset = $datasets[$i];</div><div class="line">		echo &quot;var i = &quot;. json_encode($dataset) .&quot;;\n\t&quot;;</div><div class="line">		$nums = array();</div><div class="line">		$res = json_decode($res,true);</div><div class="line"></div><div class="line">		if ($res == -404)&#123;</div><div class="line">			$disable = intval($dataset[5]);</div><div class="line">			continue;</div><div class="line">		&#125;</div><div class="line">		//calculate p-value</div><div class="line">		$res_str = implode(&quot;,&quot;,$res);</div><div class="line">		$commond_line = &quot;./anova.R&quot; . &quot; &quot; . $res_str;</div><div class="line">		$pvalue = exec($commond_line);</div><div class="line">		echo &quot;var time3  = &quot;. (microtime(TRUE) - $start) .&quot;;\n\t&quot;;</div><div class="line">		//delete [1]</div><div class="line">		$tmp = explode(&apos;&quot;&apos;,$pvalue);</div><div class="line">		$pvalue = $tmp[1];</div><div class="line">		//calculate survival results</div><div class="line">		if (in_array($dataset, $SurvDatasets)) &#123;</div><div class="line">			$surv_commond_line = &quot;./survival.R &quot; . $gene . &quot; &quot; . $dataset;</div><div class="line">			$surv_result = exec($surv_commond_line);</div><div class="line">			$tmp = explode(&apos;&quot;&apos;,$surv_result);</div><div class="line">			$sur_res_str = $tmp[1];</div><div class="line">			$surv_results = explode(&apos;,&apos;,$sur_res_str);</div><div class="line">			array_push($survivals,$surv_results);</div><div class="line">			array_push($surv_datasets,$dataset);</div><div class="line">		&#125;</div><div class="line">		array_push($p_values,$pvalue);</div><div class="line">		array_push($img_sets,$dataset);</div><div class="line">		array_push($tbl_sets,$dataset);</div><div class="line">		$nums[0] = count($res);</div><div class="line">		//find &quot;-1&quot; index</div><div class="line">		if ($type == &quot;all&quot;)&#123;</div><div class="line">			$total_num = count($res);</div><div class="line">			$index = $total_num - 1;</div><div class="line">			while(1)&#123;</div><div class="line">				if ($res[$index] == &quot;-1&quot;)&#123;</div><div class="line">					break;</div><div class="line">				&#125;</div><div class="line">				else&#123;</div><div class="line">					$index = $index - 1;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			//sample numbers of different type</div><div class="line">			</div><div class="line">			for($i = 0;$i &lt; $total_num - 1 - $index; $i++)&#123;</div><div class="line">				$nums[$i] = $res[$index + $i + 1];</div><div class="line">				unset($res[$index + $i + 1]);</div><div class="line">			&#125;</div><div class="line">			unset($res[$index]);</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		$js_nums = json_encode($nums);</div><div class="line">		$js_res = json_encode($res);</div><div class="line">		echo &quot;js_nums[&quot;. $iter .&quot;] = &quot;. $js_nums .&quot;;\n\t&quot;;</div><div class="line">		echo &quot;js_res[&quot;. $iter .&quot;] = &quot;. $js_res .&quot;;\n\t&quot;;</div><div class="line">		echo &quot;indice[&quot;. $iter .&quot;] = &quot;. $index .&quot;;\n\t&quot;;</div><div class="line">		echo &quot;total_nums[&quot;. $iter .&quot;] = &quot;. $total_num .&quot;;\n\t&quot;;</div><div class="line">		$iter ++;</div><div class="line">		</div><div class="line">		echo &quot;var time1  = &quot;. (microtime(TRUE) - $start) .&quot;;\n\t&quot;;</div><div class="line">		//plot image using Rscript</div><div class="line">		$res_str = implode(&quot;,&quot;,$res);</div><div class="line">		$nums_str = implode(&quot;,&quot;,$nums);</div><div class="line">		//$start = microtime(TRUE);	</div><div class="line">		$R_str = &quot;./plot.R &quot; . &quot; &quot; . $res_str . &quot; &quot; . $nums_str . &quot; &quot;. $gene . &quot; &quot;  . $type .&quot; &quot;. $dataset;</div><div class="line">		exec($R_str,$ttttt);</div><div class="line">		echo &quot;var time  = &quot;. (microtime(TRUE) - $start) .&quot;;\n\t&quot;;</div><div class="line">	&#125;</div><div class="line">	echo &quot;var datasets = &quot;. json_encode($tbl_sets) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var datasets_nums = &quot;. $iter .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var img_sets = &quot;. json_encode($img_sets) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var p_values =&quot;. json_encode($p_values) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var survivals =&quot;. json_encode($survivals) .&quot;;\n\t&quot;;</div><div class="line">	echo &quot;var surv_datasets =&quot;. json_encode($surv_datasets) .&quot;;\n\t&quot;;</div><div class="line">	</div><div class="line">&#125;</div><div class="line">$delay = microtime(TRUE) - $start;</div><div class="line">echo &quot;var delay =&quot;. $delay .&quot;;\n\t&quot;;</div><div class="line">?&gt;</div><div class="line">function mean(arr)</div><div class="line">&#123;</div><div class="line">	</div><div class="line">	var len = 0;</div><div class="line">	var sum = 0;</div><div class="line">	for(var i=0;i&lt;arr.length;i++)</div><div class="line">	&#123;</div><div class="line">		len = len + 1;</div><div class="line">		sum = sum + parseFloat(arr[i]);</div><div class="line">	//	if (i==11) console.log(arr[i]); </div><div class="line">	&#125;</div><div class="line">	//console.log(arr);</div><div class="line">	return sum / len;    </div><div class="line">&#125;</div><div class="line">function variance(arr)</div><div class="line">&#123;</div><div class="line">	</div><div class="line">	var v = 0;</div><div class="line">	len = arr.length;</div><div class="line">	if (len &gt; 1)</div><div class="line">	&#123;</div><div class="line">		var mean0 = mean(arr);</div><div class="line">		for(var i=0;i&lt;arr.length;i++)</div><div class="line">		&#123;</div><div class="line">			v = v + (arr[i] - mean0) * (arr[i] - mean0);                        </div><div class="line">		&#125;</div><div class="line">		return v / len;</div><div class="line">	&#125;</div><div class="line">	else</div><div class="line">	&#123;</div><div class="line">		 return 0;</div><div class="line">	&#125;    </div><div class="line">&#125;</div><div class="line">//console.log(flag);</div><div class="line">var start = new Date();</div><div class="line">if (flag)&#123;</div><div class="line">	var div1 = document.getElementById(&quot;panel_div1&quot;);</div><div class="line">	var div2 = document.getElementById(&quot;panel_div2&quot;);</div><div class="line">	var div3 = document.getElementById(&quot;panel_div3&quot;);</div><div class="line">	var div4 = document.getElementById(&quot;panel_div4&quot;);</div><div class="line">	var div5 = document.getElementById(&quot;panel_div5&quot;);</div><div class="line">	div1.setAttribute(&quot;class&quot;,&quot;panel-default&quot;);</div><div class="line">	div2.setAttribute(&quot;class&quot;,&quot;panel-default&quot;);</div><div class="line">	div3.setAttribute(&quot;class&quot;,&quot;panel-default&quot;);</div><div class="line">	div4.setAttribute(&quot;class&quot;,&quot;panel-default&quot;);</div><div class="line">	div5.setAttribute(&quot;class&quot;,&quot;panel-default&quot;);</div><div class="line">	var h1 = document.getElementById(&quot;query_info&quot;);</div><div class="line">	var h2 = document.getElementById(&quot;query_result&quot;);</div><div class="line">	var h3 = document.getElementById(&quot;query_image&quot;);</div><div class="line">	var h4 = document.getElementById(&quot;survival_result&quot;);</div><div class="line">	var h5 = document.getElementById(&quot;KM_image&quot;);</div><div class="line">	h1.innerText = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;Query Information&quot;);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	h2.innerText = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;Differential Analysis&quot;);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	h3.innerText = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;Gene Expressions &amp; Co-Expression&quot;);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	h4.innerText = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;Survival Analysis&quot;);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	h5.innerText = &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;KM Test Curv&quot;);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	//query_info</div><div class="line">	//var p = document.getElementById(&quot;info&quot;);</div><div class="line">	//p.innerText =  &lt;?php if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;)&#123;echo json_encode(&quot;  &quot; .$ID . &quot; : &quot; . $gene);&#125;else&#123;echo json_encode(&quot;&quot;);&#125;?&gt;;</div><div class="line">	//var h = document.getElementById(&quot;network&quot;);</div><div class="line">	//h.innerText = &quot;Co-Expression Network&quot;;</div><div class="line">	//query_table</div><div class="line">	var tbl = document.getElementById(&apos;query_table&apos;);</div><div class="line">	var thd = document.createElement(&apos;thead&apos;);</div><div class="line">	var tbd = document.createElement(&apos;tbody&apos;);</div><div class="line">	//thead</div><div class="line">	var text = new Array();</div><div class="line">	text[0] = &quot;Dataset&quot;;</div><div class="line">	text[1] = &quot;Type&quot;;</div><div class="line">	text[2] = &quot;P-value&quot;;</div><div class="line">	text[3] = &quot;Sample Nums&quot;;</div><div class="line">	text[4] = &quot;Mean Value&quot;;</div><div class="line">	text[5] = &quot;Min Value&quot;;</div><div class="line">	text[6] = &quot;Max Value&quot;;</div><div class="line">	text[7] = &quot;Standard Deviation&quot;;</div><div class="line">	var tr = document.createElement(&apos;tr&apos;);</div><div class="line">	for (var i = 0; i &lt; 8; i++)&#123;</div><div class="line">	 var th = document.createElement(&apos;th&apos;);</div><div class="line">	 th.appendChild(document.createTextNode(text[i]));</div><div class="line">	 th.setAttribute(&quot;class&quot;,&quot;text-center&quot;);</div><div class="line">	 tr.appendChild(th);</div><div class="line">	&#125;</div><div class="line">	thd.appendChild(tr);</div><div class="line">	tbl.appendChild(thd);</div><div class="line">	//tbody</div><div class="line">	if (datasets_nums == 0)&#123;</div><div class="line">		var div = document.getElementById(&quot;None&quot;);</div><div class="line">		div.innerText = &quot;No result found&quot;;</div><div class="line">		var div1 = document.getElementById(&quot;None1&quot;);</div><div class="line">		div1.innerText = &quot;No result found&quot;;</div><div class="line">	&#125;	</div><div class="line">	var num = 1;</div><div class="line">	var type_list = [[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;,&quot;Cirrhotic&quot;,&quot;Healthy&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;,&quot;Healthy&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;],[&quot;HCC&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;,&quot;Healthy&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;]];</div><div class="line">	//var type_list = [[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;,&quot;Cirrhotic&quot;,&quot;Healthy&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;,&quot;Healthy&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;],[&quot;HCC&quot;,&quot;Adjacent&quot;]];		</div><div class="line">var start = new Date();</div><div class="line">for (var set = 0;set &lt; datasets_nums; set ++)&#123;</div><div class="line">		var show_nums = 0;</div><div class="line">		num = total_nums[set] - indice[set] - 1;//type numbers</div><div class="line">		for (var i = 0;i &lt; num; i++)&#123;</div><div class="line">			var tr0 = document.createElement(&apos;tr&apos;);</div><div class="line">			var td1 = document.createElement(&apos;td&apos;);</div><div class="line">			var td2 = document.createElement(&apos;td&apos;);</div><div class="line">			var td3 = document.createElement(&apos;td&apos;);</div><div class="line">			var td4 = document.createElement(&apos;td&apos;);</div><div class="line">			var td5 = document.createElement(&apos;td&apos;);</div><div class="line">			var td6 = document.createElement(&apos;td&apos;);</div><div class="line">			var td7 = document.createElement(&apos;td&apos;);</div><div class="line">			var td8 = document.createElement(&apos;td&apos;);</div><div class="line">			td1.innerText = datasets[set];</div><div class="line">			if (type != &apos;all&apos;)&#123;</div><div class="line">				td2.innerText = type;</div><div class="line">				td3.innerText = js_nums[set][i];</div><div class="line">				td4.innerText = mean(js_res[set]).toFixed(4);</div><div class="line">				td5.innerText = Math.min.apply(null,js_res[set]).toFixed(4);</div><div class="line">				td6.innerText = Math.max.apply(null,js_res[set]).toFixed(4);</div><div class="line">				td7.innerText = Math.sqrt(variance(js_res[set])).toFixed(4);</div><div class="line">			&#125;</div><div class="line">			else&#123;</div><div class="line">				if (i == 0)</div><div class="line">					td2.innerText = &quot;HCC&quot;;</div><div class="line">				if (i == 1)</div><div class="line">					td2.innerText = &quot;Adjacent&quot;;</div><div class="line">				if (i == 2)&#123;</div><div class="line">					//td2.innerText = &quot;Cirrhotic&quot;;</div><div class="line">					var tmp = parseInt(datasets[set].split(&quot;B&quot;)[1]);</div><div class="line">					td2.innerText = type_list[tmp-1][2];</div><div class="line">					</div><div class="line">				&#125;</div><div class="line">				if (i == 3)</div><div class="line">					td2.innerText = &quot;Healthy&quot;;</div><div class="line">				td3.innerText = p_values[set];</div><div class="line">				if (datasets[set]==&quot;HCCDB8&quot;) td3.innerText = p_values[set] + &quot; &quot;;				</div><div class="line">				td4.innerText = js_nums[set][i];</div><div class="line">				var slice = js_res[set].slice(show_nums,show_nums + js_nums[set][i]);</div><div class="line">				//console.log(slice);</div><div class="line">				show_nums = show_nums + js_nums[set][i];</div><div class="line">				td5.innerText = mean(slice).toFixed(4);</div><div class="line">				td6.innerText = Math.min.apply(null,slice).toFixed(4);</div><div class="line">				td7.innerText = Math.max.apply(null,slice).toFixed(4);</div><div class="line">				td8.innerText = Math.sqrt(variance(slice)).toFixed(4);</div><div class="line">			&#125;</div><div class="line">			</div><div class="line"></div><div class="line">			tr0.appendChild(td1);</div><div class="line">			tr0.appendChild(td2);</div><div class="line">			tr0.appendChild(td3);</div><div class="line">			tr0.appendChild(td4);</div><div class="line">			tr0.appendChild(td5);</div><div class="line">			tr0.appendChild(td6);</div><div class="line">			tr0.appendChild(td7);</div><div class="line">			tr0.appendChild(td8);</div><div class="line">			tbd.appendChild(tr0);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	tbl.appendChild(tbd);</div><div class="line">	$(&quot;#query_table&quot;).rowspan(&#123;td:3&#125;);</div><div class="line">	$(&quot;#query_table&quot;).rowspan(&#123;td:1&#125;);</div><div class="line">	 &lt;?php</div><div class="line">      		 if ($flag)&#123;</div><div class="line">               	$commond_line = &quot;./get_symbol.py&quot; . &quot; &quot; . $ID . &quot; &quot; . $gene;</div><div class="line">               	$result = json_decode(exec($commond_line),true);</div><div class="line">                	echo &quot;var data_type = &quot;.json_encode($ID).&quot;;\n\t&quot; ;</div><div class="line">               	 if ($ID == &quot;Entrez_ID&quot;)&#123;</div><div class="line">                       	echo &quot;var symbol = &quot;.json_encode($result[0]).&quot;;\n\t&quot; ;//get query symbol</div><div class="line">                       	echo &quot;var entrez_id = &quot;. json_encode($gene) . &quot;;\n\t&quot; ;</div><div class="line">               	&#125;</div><div class="line">               	if ($ID == &quot;Symbol&quot;)&#123;</div><div class="line">                       	echo &quot;var symbol = &quot;.json_encode($gene).&quot;;\n\t&quot; ;//get query symbol</div><div class="line">                       	echo &quot;var entrez_id = &quot;. json_encode($result) . &quot;;\n\t&quot; ;</div><div class="line">               	&#125;</div><div class="line">               	if ($ID == &quot;miRNA&quot;)&#123;</div><div class="line">                       	echo &quot;var symbol = &quot;.json_encode($gene).&quot;;\n\t&quot; ;//get query symbol</div><div class="line">               	&#125;</div><div class="line">               &#125;</div><div class="line">        ?&gt;</div><div class="line"></div><div class="line">	//insert image</div><div class="line">	var div1 = document.getElementById(&apos;img_display&apos;);</div><div class="line">	for (var k in img_sets)&#123;</div><div class="line">		var div11 = document.createElement(&quot;div&quot;);</div><div class="line">		var div12 = document.createElement(&quot;div&quot;);</div><div class="line">		var div121 = document.createElement(&apos;div&apos;);</div><div class="line">		var div122 = document.createElement(&apos;div&apos;);</div><div class="line">		var strong = document.createElement(&apos;b&apos;);</div><div class="line">		var p_value = document.createElement(&apos;i&apos;);</div><div class="line">		p_value.innerText = &quot;P-value: &quot; + p_values[k];</div><div class="line">		p_value.setAttribute(&quot;style&quot;,&quot;position:relative;left:45%;top:26px;background&quot;);</div><div class="line">		//p_value.setAttribute(&quot;position&quot;,&quot;relative&quot;);</div><div class="line">		//p_value.setAttribute(&quot;left&quot;,&quot;100px&quot;);</div><div class="line">		//p_value.setAttribute(&quot;top&quot;,&quot;10px&quot;);</div><div class="line">		div11.setAttribute(&quot;class&quot;,&quot;col-xs-8&quot;);</div><div class="line">		strong.appendChild(p_value);</div><div class="line">		div11.appendChild(strong);</div><div class="line">		div12.setAttribute(&quot;class&quot;,&quot;col-xs-4&quot;);</div><div class="line">		div122.setAttribute(&quot;id&quot;,&quot;cy&quot;+k);</div><div class="line">		div122.setAttribute(&quot;class&quot;,&quot;cy&quot;);</div><div class="line">		var a = document.createElement(&quot;a&quot;);</div><div class="line">		a.setAttribute(&quot;class&quot;,&quot;h4&quot;);</div><div class="line">		a.setAttribute(&quot;align&quot;,&quot;center&quot;);</div><div class="line">		a.innerText = &quot;Co-Expression Network&quot;;</div><div class="line">		a.setAttribute(&quot;style&quot;,&quot;position:relative;left:75px;top:35px;z-index:10;color:#337ab7&quot;);</div><div class="line">		if (data_type == &quot;miRNA&quot;)</div><div class="line">		    a.href = &quot;coexpression_mirna.php?symbol=&quot;+symbol+&quot;&amp;dataset=&quot;+datasets[k];</div><div class="line">		else</div><div class="line">           		    a.href = &quot;coexpression.php?symbol=&quot;+symbol+&quot;&amp;dataset=&quot;+datasets[k];</div><div class="line">		a.setAttribute(&quot;target&quot;,&quot;_blanket&quot;);	</div><div class="line">		div121.appendChild(a);</div><div class="line">		var img = new Image();</div><div class="line">		img.src = &quot;./temp/&quot; + &lt;?php echo json_encode($gene);?&gt;+ &apos;_&apos; + img_sets[k] + &quot;.png&quot;;</div><div class="line">               	img.class = &quot;img-responsive&quot;;</div><div class="line">	//img.onload = function()&#123;</div><div class="line">		div11.appendChild(img);</div><div class="line">		div12.appendChild(div121);</div><div class="line">		div12.appendChild(div122);</div><div class="line">		div1.appendChild(div11);</div><div class="line">		div1.appendChild(div12);</div><div class="line">	&#125; </div><div class="line">	//&#125;;	</div><div class="line">	//survival table</div><div class="line">	var tbl = document.getElementById(&apos;survival_table&apos;);</div><div class="line">               var thd = document.createElement(&apos;thead&apos;);</div><div class="line">               var tbd = document.createElement(&apos;tbody&apos;);</div><div class="line">               //thead</div><div class="line">               var text = new Array();</div><div class="line">               text[0] = &quot;Dataset&quot;;</div><div class="line">	text[1] = &quot;Type&quot;;</div><div class="line">               text[2] = &quot;P-value of KM test&quot;;</div><div class="line">               text[3] = &quot;LowExprMedian&quot;;</div><div class="line">               text[4] = &quot;HighExprMedian&quot;;</div><div class="line">               text[5] = &quot;P-value of Log test&quot;;</div><div class="line">               text[6] = &quot;Coef&quot;;</div><div class="line">               var tr = document.createElement(&apos;tr&apos;);</div><div class="line">               for (var i = 0; i &lt; 7; i++)&#123;</div><div class="line">                var th = document.createElement(&apos;th&apos;);</div><div class="line">                th.appendChild(document.createTextNode(text[i]));</div><div class="line">                th.setAttribute(&quot;class&quot;,&quot;text-center&quot;);</div><div class="line">                tr.appendChild(th);</div><div class="line">               &#125;</div><div class="line">               thd.appendChild(tr);</div><div class="line">               tbl.appendChild(thd);</div><div class="line">               //tbody</div><div class="line">               if (surv_datasets.length == 0)&#123;</div><div class="line">                       var div = document.getElementById(&quot;None2&quot;);</div><div class="line">                       div.innerText = &quot;No result found&quot;;</div><div class="line">                       var div1 = document.getElementById(&quot;None3&quot;);</div><div class="line">                       div1.innerText = &quot;No result found&quot;;</div><div class="line">               &#125;</div><div class="line">	for (var k in surv_datasets) &#123;</div><div class="line">		var tr0 = document.createElement(&apos;tr&apos;);</div><div class="line">		var tr1 = document.createElement(&apos;tr&apos;);</div><div class="line">               	var td1 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td2 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td3 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td4 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td5 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td6 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td7 = document.createElement(&apos;td&apos;);</div><div class="line">                       var td8 = document.createElement(&apos;td&apos;);</div><div class="line">		var td9 = document.createElement(&apos;td&apos;);</div><div class="line">		var td10= document.createElement(&apos;td&apos;);</div><div class="line">		var td11= document.createElement(&apos;td&apos;);</div><div class="line">		var td12= document.createElement(&apos;td&apos;);</div><div class="line">		var td13= document.createElement(&apos;td&apos;);</div><div class="line">		var td14= document.createElement(&apos;td&apos;);</div><div class="line">		td1.innerText = surv_datasets[k];</div><div class="line">		//HCC</div><div class="line">		//td1.setAttribute(&apos;rowspan&apos;,2);</div><div class="line">		td2.innerText = &apos;HCC&apos;;</div><div class="line">		td3.innerText = survivals[k][0];</div><div class="line">		td4.innerText = survivals[k][1];</div><div class="line">		td5.innerText = survivals[k][2];</div><div class="line">		td6.innerText = survivals[k][3];</div><div class="line">		td7.innerText = survivals[k][4];</div><div class="line">		tr0.appendChild(td1);</div><div class="line">                       tr0.appendChild(td2);</div><div class="line">                       tr0.appendChild(td3);</div><div class="line">                       tr0.appendChild(td4);</div><div class="line">                       tr0.appendChild(td5);</div><div class="line">                       tr0.appendChild(td6);</div><div class="line">                       tr0.appendChild(td7);</div><div class="line">                       tbd.appendChild(tr0);</div><div class="line">		//Adjacent</div><div class="line">		td14.innerText= surv_datasets[k];</div><div class="line">		td8.innerText = &apos;Adjacent&apos;;</div><div class="line">		td9.innerText = survivals[k][5];</div><div class="line">		td10.innerText= survivals[k][6];</div><div class="line">		td11.innerText= survivals[k][7];</div><div class="line">		td12.innerText= survivals[k][8];</div><div class="line">		td13.innerText= survivals[k][9];</div><div class="line">		tr1.appendChild(td14);</div><div class="line">                       tr1.appendChild(td8);</div><div class="line">                       tr1.appendChild(td9);</div><div class="line">                       tr1.appendChild(td10);</div><div class="line">                       tr1.appendChild(td11);</div><div class="line">                       tr1.appendChild(td12);</div><div class="line">                       tr1.appendChild(td13);</div><div class="line">                       tbd.appendChild(tr1);</div><div class="line"></div><div class="line"></div><div class="line">	&#125;</div><div class="line">	tbl.appendChild(tbd);</div><div class="line">	$(&quot;#survival_table&quot;).rowspan(&#123;td:1&#125;);</div><div class="line"></div><div class="line">//KM test curv</div><div class="line">var div1 = document.getElementById(&apos;KM_img_display&apos;);</div><div class="line">               for (var k in surv_datasets)&#123;</div><div class="line">                       var div11 = document.createElement(&quot;div&quot;);</div><div class="line">                       var p_value = document.createElement(&apos;i&apos;);</div><div class="line">                       p_value.innerText = &quot;P-value: &quot; + survivals[k][0];</div><div class="line">                       p_value.setAttribute(&quot;style&quot;,&quot;position:relative;left:-176px;top:87px&quot;);</div><div class="line">		var p_value_adj = document.createElement(&apos;i&apos;);</div><div class="line">		p_value_adj.innerText = &quot;P-value: &quot; + survivals[k][5];</div><div class="line">		p_value_adj.setAttribute(&quot;style&quot;,&quot;position:relative;left:300px;top:87px&quot;);	</div><div class="line">                       div11.appendChild(p_value);</div><div class="line">		div11.appendChild(p_value_adj);</div><div class="line">                       var img = new Image();</div><div class="line">                       img.src = &quot;./KMCurv/&quot; + &lt;?php echo json_encode($gene);?&gt; + &quot;_&quot;  + surv_datasets[k] + &quot;.png&quot;;</div><div class="line">                       img.class = &quot;img-responsive&quot;;</div><div class="line">                       div11.appendChild(img);</div><div class="line">                       div1.appendChild(div11);</div><div class="line">               &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">&#125;);</div><div class="line">//console.log(new Date()-start);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
@@ -296,214 +290,270 @@
 
       
     </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/31/Search_php1/" rel="next" title="Search.php（1）">
+                <i class="fa fa-chevron-left"></i> Search.php（1）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/03/Search_php3/" rel="prev" title="Search.php（3）">
+                Search.php（3） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
   </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/11/01/Search_php2/">Search.php（2）</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">紫色的紫</a></p>
-        <p><span>发布时间:</span>2016-11-01, 17:46:28</p>
-        <p><span>最后更新:</span>2016-11-03, 17:14:58</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/11/01/Search_php2/" title="Search.php（2）">http://yoursite.com/2016/11/01/Search_php2/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/01/Search_php2/　　作者: 紫色的紫" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-        </p>
-    </div>
 
 
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/11/03/Search_php3/">
-                    Search.php（3）
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/10/31/Search_php1/">
-                    Search.php（1）
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#代码解读"><span class="toc-number">1.</span> <span class="toc-text">代码解读</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-第四个script部分"><span class="toc-number">1.1.</span> <span class="toc-text">5.第四个script部分</span></a></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Search.php（2）　| Purple Violet　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
-
-
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2016/11/03/Search_php3/" title="上一篇: Search.php（3）">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2016/10/31/Search_php1/" title="下一篇: Search.php（1）">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/phphp_study/">phphp_study</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/Search_php3/">Search.php（3）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/01/Search_php2/">Search.php（2）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/31/Search_php1/">Search.php（1）</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016 紫色的紫
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
         </div>
         
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 1;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
   </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww4.sinaimg.cn/small/4d4c8325jw1f9f7zhe9l6j20xc0xc43k.jpg"
+               alt="紫色的紫" />
+          <p class="site-author-name" itemprop="name">紫色的紫</p>
+          <p class="site-description motion-element" itemprop="description">Purple Violet</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#代码解读"><span class="nav-number">1.</span> <span class="nav-text">代码解读</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-第四个script部分"><span class="nav-number">1.1.</span> <span class="nav-text">5.第四个script部分</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">紫色的紫</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
 </body>
 </html>
