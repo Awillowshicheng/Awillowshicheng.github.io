@@ -286,86 +286,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="php学习笔记"><a href="#php学习笔记" class="headerlink" title="php学习笔记"></a>php学习笔记</h2><h3 id="1-php变量"><a href="#1-php变量" class="headerlink" title="1.php变量"></a>1.php变量</h3><blockquote>
-<p>变量以$符号开头，其后是变量名称<br>变量只能包含字母数字字符和下划线，只能以字母下划线开头，大小写敏感<br>变量在首次为其赋值时被创建<br>php有三种不同的变量作用域：local global static</p>
-<hr>
-<h3 id="2-php输出语句"><a href="#2-php输出语句" class="headerlink" title="2.php输出语句"></a>2.php输出语句</h3><p>echo能够输出一个以上的字符串，字符串内能包含html标记<br>print能够输出一个字符串，返回值为1</p>
-<hr>
-<h3 id="3-php数据类型"><a href="#3-php数据类型" class="headerlink" title="3.php数据类型"></a>3.php数据类型</h3><p>字符串<br>整数<br>浮点数<br>逻辑<br>数组<br>对象<br>NULL</p>
-<hr>
-<h3 id="4-php字符串运算符"><a href="#4-php字符串运算符" class="headerlink" title="4.php字符串运算符"></a>4.php字符串运算符</h3><p><strong>.串接</strong><br>exp:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$txt1=&quot;Hello&quot;;</div><div class="line">$txt2=$txt1.&quot;world!&quot;;</div></pre></td></tr></table></figure></p>
-<p><strong>.=串接赋值</strong><br>exp:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$txt1=&quot;Hello&quot;;</div><div class="line">$txt1.=&quot;world!&quot;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h3 id="5-php-foreach循环"><a href="#5-php-foreach循环" class="headerlink" title="5.php foreach循环"></a>5.php foreach循环</h3><blockquote>
-<p>foreach($array as $value){<br>   code to be executed;<br>}</p>
-<blockquote>
-<p>exp:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">$color = array(&quot;red&quot;,&quot;green&quot;,&quot;yellow&quot;);</div><div class="line">foreach($color as $value)&#123;</div><div class="line">	echo &quot;$value &lt;br&gt;&quot;;</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-</blockquote>
-</blockquote>
-<hr>
-<h3 id="6-php数组"><a href="#6-php数组" class="headerlink" title="6.php数组"></a>6.php数组</h3><blockquote>
-<p>count()函数：返回数组的长度<br>三种数组类型： 索引数组 关联数组 多维数组<br>遍历关联数组<br>exp:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">$age=array(&quot;BIll&quot;=&gt;&quot;35&quot;,&quot;Steve&quot;=&gt;&quot;37&quot;,&quot;Peter&quot;=&gt;&quot;43&quot;);</div><div class="line">foreach($age as $x=&gt;$x_value)&#123;</div><div class="line">	echo&quot;Key=&quot;.$x.&quot;,value&quot;.$x_value;</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h3 id="7-php数组排序函数"><a href="#7-php数组排序函数" class="headerlink" title="7.php数组排序函数"></a>7.php数组排序函数</h3><blockquote>
-<p>sort()以升序对数组排序<br>rsort()以降序对数组进行排序<br>asort()根据值，以升序对关联数组进行排序<br>ksort()根据键，以升序对关联数组进行排序<br>arsort()根据值，以降序对关联数组进行排序<br>krsort()根据键，以降序对关联数组进行排序</p>
-<hr>
-<h3 id="8-php超全局变量"><a href="#8-php超全局变量" class="headerlink" title="8.php超全局变量"></a>8.php超全局变量</h3><p><strong>超全局变量在一个脚本的全部作用域中都可用</strong><br>$GLOBALS<br>$_SERVER<br>$_REQUEST<br>$_POST<br>$_GET<br>$_FILES<br>$_ENV<br>$_COOKIE<br>$_SESSION</p>
-<p><table></table></p>
-<tr><br><th>元素/代码</th><br><th>描述</th><br></tr>
-
-</blockquote>
-<tr><br><td>$_SERVER[‘PHP_SELF’]</td><br><td>返回当前执行脚本的文件名。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘GATEWAY_INTERFACE’]</td><br><td>返回服务器使用的 CGI 规范的版本。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_ADDR’]</td><br><td>返回当前运行脚本所在的服务器的 IP 地址。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_NAME’]</td><br><td>返回当前运行脚本所在的服务器的主机名（比如 www.w3school.com.cn）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_SOFTWARE’]</td><br><td>返回服务器标识字符串（比如 Apache/2.2.24）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_PROTOCOL’]</td><br><td>返回请求页面时通信协议的名称和版本（例如，“HTTP/1.0”）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘REQUEST_METHOD’]</td><br><td>返回访问页面使用的请求方法（例如 POST）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘REQUEST_TIME’]</td><br><td>返回请求开始时的时间戳（例如 1577687494）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘QUERY_STRING’]</td><br><td>返回查询字符串，如果是通过查询字符串访问此页面。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘HTTP_ACCEPT’]</td><br><td>返回来自当前请求的请求头。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘HTTP_ACCEPT_CHARSET’]</td><br><td>返回来自当前请求的 Accept_Charset 头（ 例如 utf-8,ISO-8859-1）</td><br></tr>
-
-<tr><br><td>$_SERVER[‘HTTP_HOST’]</td><br><td>返回来自当前请求的 Host 头。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘HTTP_REFERER’]</td><br><td>返回当前页面的完整 URL（不可靠，因为不是所有用户代理都支持）。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘HTTPS’]</td><br><td>是否通过安全 HTTP 协议查询脚本。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘REMOTE_ADDR’]</td><br><td>返回浏览当前页面的用户的 IP 地址。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘REMOTE_HOST’]</td><br><td>返回浏览当前页面的用户的主机名。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘REMOTE_PORT’]</td><br><td>返回用户机器上连接到 Web 服务器所使用的端口号。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SCRIPT_FILENAME’]</td><br><td>返回当前执行脚本的绝对路径。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_ADMIN’]</td><br><td>该值指明了 Apache 服务器配置文件中的 SERVER_ADMIN 参数。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_PORT’]</td><br><td>Web 服务器使用的端口。默认值为 “80”。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SERVER_SIGNATURE’]</td><br><td>返回服务器版本和虚拟主机名。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘PATH_TRANSLATED’]</td><br><td>当前脚本所在文件系统（非文档根目录）的基本路径。</td><br></tr>
-
-<tr><br><td>$_SERVER[‘SCRIPT_NAME’]</td><br><td>返回当前脚本的路径。</td><br></tr>
-
-<p><tr></tr></p>
-<p><td>$_SERVER[‘SCRIPT_URI’]</td></p>
-<p><td>返回当前页面的 URI。</td><br><br></p>
-
+              <p><Excerpt in index | 首页摘要><br>
+          
       
     </div>
     
@@ -374,6 +296,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2016/11/03/phphp_study/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
