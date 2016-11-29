@@ -19,11 +19,11 @@
 <meta property="og:title" content="GATK_bamfile">
 <meta property="og:url" content="http://yoursite.com/2016/11/29/GATK-bamfile/index.html">
 <meta property="og:site_name" content="Purple Violet">
-<meta property="og:image" content="http://yoursite.com/BP_somatic_workflow_mutect1.png">
-<meta property="og:updated_time" content="2016-11-29T08:09:39.050Z">
+<meta property="og:image" content="http://yoursite.com/images/BP_somatic_workflow_mutect1.png">
+<meta property="og:updated_time" content="2016-11-29T08:17:12.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GATK_bamfile">
-<meta name="twitter:image" content="http://yoursite.com/BP_somatic_workflow_mutect1.png">
+<meta name="twitter:image" content="http://yoursite.com/images/BP_somatic_workflow_mutect1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -296,7 +296,8 @@
 <p><strong>result1:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@RG     ID:0    PL:Illumina     PU:140928_SN896_0553_AC4HHCACXX_5_ID04  LB:TLVR.2V-A95S-01A-T_1AMP      DS:TCGA Liver   DT:2014-10-10T03:00:00-0500     SM:TCGA-2V-A95S-01A-11D-A36X-10 CN:BCM</div></pre></td></tr></table></figure></p>
 <p><strong>说明：</strong><br><strong>command2:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">samtool view -H /data2/TCGA/LIHC/WXS/0a2df548-7c8c-46c5-9290-2e4d85604c17/TCGA-2V-A95S-01A-11D-A36X-10_Illumina.bam | grep &apos;@PG&apos;</div></pre></td></tr></table></figure></p>
 <p><strong>result2:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@PG     ID:GATK IndelRealigner  VN:2.5-2-gf57256b       CL:knownAlleles=[(RodBinding name=knownAlleles source=/stornext/snfs5/next-gen/Illumina/ipipeV3.6/Databases/1KG_InDels/1000G_phase1.indels.b37.vcf.gz), (RodBinding name=knownAlleles2 source=/stornext/snfs5/next-gen/Illumina/ipipeV3.6/Databases/Mills_InDels/Mills_and_1000G_gold_standard.indels.b37.vcf.gz)] targetIntervals=/space1/tmp/11362609.sug-moab/C4HHCACXX-5-ID04.GATKrealign.intervals LODThresholdForCleaning=5.0 consensusDeterminationModel=USE_READS entropyThreshold=0.15 maxReadsInMemory=150000 maxIsizeForMovement=3000 maxPositionalMoveAllowed=200 maxConsensuses=30 maxReadsForConsensuses=120 maxReadsForRealignment=20000 noOriginalAlignmentTags=false nWayOut=null generate_nWayOut_md5s=false check_early=false noPGTag=false keepPGTags=false indelsFileForDebugging=null statisticsFileForDebugging=null SNPsFileForDebugging=null</div><div class="line">@PG     ID:MarkDuplicates       PN:MarkDuplicates       VN:1.93(1476)   CL:net.sf.picard.sam.MarkDuplicates INPUT=[/space1/tmp/11362608.sug-moab/C4HHCACXX-5-ID04_sorted.bam] OUTPUT=C4HHCACXX-5-ID04_marked.bam METRICS_FILE=C4HHCACXX-5-ID04.PCR_Duplicates_metrics.txt ASSUME_SORTED=true TMP_DIR=[/space1/tmp] VALIDATION_STRINGENCY=LENIENT MAX_RECORDS_IN_RAM=2500000 CREATE_INDEX=true    PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates REMOVE_DUPLICATES=false MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 READ_NAME_REGEX=[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).* OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 CREATE_MD5_FILE=false</div><div class="line">@PG     ID:bwa  PN:bwa  VN:0.6.2-r126</div><div class="line">@PG     ID:GATK PrintReads      VN:2.5-2-gf57256b       CL:readGroup=null platform=null number=-1 downsample_coverage=1.0 sample_file=[] sample_name=[] simplify=false no_pg_tag=false</div></pre></td></tr></table></figure></p>
-<p><strong>说明：</strong><br>对bam文件进行过四次操作，并且越靠前的操作记录，所对应的时间越接近现在<br>对照BEST PRACTICE的workflow<br><img src="BP_somatic_workflow_mutect1.png" alt="BP_somatic_workflow_mutect1"><br>bam文件已经经过了BWA、MarkDuplicates、和IndelRealigner的处理，已经来到T/N PRE-PROCESSING 的Indel Realignment阶段（基因重组），根据流程图，下一阶段可认为是用MuTect处理。</p>
+<p><strong>说明：</strong><br>对bam文件进行过四次操作，并且越靠前的操作记录，所对应的时间越接近现在，对照BEST PRACTICE的workflow，bam文件已经经过了BWA、MarkDuplicates、和IndelRealigner的处理，已经来到T/N PRE-PROCESSING 的Indel Realignment阶段（基因重组），根据流程图，下一阶段可认为是用MuTect处理。</p>
+<p><img src="/images/BP_somatic_workflow_mutect1.png" alt="BP_somatic_workflow_mutect1"></p>
 
       
     </div>
@@ -308,7 +309,7 @@
         <p><span>本文标题:</span><a href="/2016/11/29/GATK-bamfile/">GATK_bamfile</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">紫色的紫</a></p>
         <p><span>发布时间:</span>2016-11-29, 15:52:15</p>
-        <p><span>最后更新:</span>2016-11-29, 16:09:39</p>
+        <p><span>最后更新:</span>2016-11-29, 16:17:12</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/11/29/GATK-bamfile/" title="GATK_bamfile">http://yoursite.com/2016/11/29/GATK-bamfile/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/29/GATK-bamfile/　　作者: 紫色的紫" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
